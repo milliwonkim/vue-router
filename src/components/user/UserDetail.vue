@@ -32,6 +32,11 @@
             }
         },
         beforeRouteEnter (to, from, next) {
+
+            // next(vm => {
+            //     vm.link;
+            // });
+
             if(true) {
                 /**as long as you don't call next here,
                  * this component is not loaded

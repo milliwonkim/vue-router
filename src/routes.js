@@ -19,7 +19,11 @@ const User = resolve => {
          * for lazy loading
          */
         resolve(require('./components/user/User.vue'));
-    }, 'user');
+    }, 
+    /**you can group them by passing an additional argument to our require.ensure() function
+     * for example 'user'
+     */
+    'user');
 }
 
 const UserStart = resolve => {
